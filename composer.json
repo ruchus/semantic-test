@@ -1,0 +1,11 @@
+{
+    "name": "pmfarma/semantic-test",
+    "type": "project",
+    "license": "GNU v3",
+    "autoload": {
+        "psr-4": {
+            "Pmfarma\\SemanticTest\\": "src/"
+        }
+    },
+    "require": {}
+}
