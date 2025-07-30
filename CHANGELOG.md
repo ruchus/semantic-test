@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/ruchus/semantic-test/compare/v1.1.0...v1.2.0) (2025-07-30)
+
+
+### Bug Fixes
+
+* modificadas actions de release 2 ([6a51cd2](https://github.com/ruchus/semantic-test/commit/6a51cd26bd6cafc693006156d131beeaa4599b66))
+
+
+### Features
+
+* modificadas actions de release ([1802169](https://github.com/ruchus/semantic-test/commit/1802169ced38d72bbf49a64dd0e2e37f4001a8e7))
+
 # [1.1.0](https://github.com/ruchus/semantic-test/compare/v1.0.0...v1.1.0) (2025-07-16)
 
 
