@@ -1,32 +1,29 @@
-name: Release1
+name: Release
 
 on:
   push:
     branches:
       - main
 
-permissions:
-  checks: write
-  pull-requests: write
-  contents: write
-
 jobs:
   release:
+    name: Semantic Release
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '18'
 
       - name: Install dependencies
         run: npm ci
 
       - name: Semantic Release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Token automático para repos públicos
+          #NPM_TOKEN: ${{ secrets.NPM_TOKEN }}       # Solo si publicas en npm
         run: npx semantic-release
